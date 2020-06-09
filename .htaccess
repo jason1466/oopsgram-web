@@ -2,7 +2,9 @@ RewriteEngine On
 
 # Redirect to single primary domain
 RewriteCond %{HTTP_HOST} woopsgram\.com$
-RewriteRule ^(.*)$ https://www.whoopsgram.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} whoopsgram\.com$
+RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
 
 # Redirect to www
 RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
