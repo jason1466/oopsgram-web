@@ -1,16 +1,16 @@
-RewriteEngine On
+# RewriteEngine On
 
-# Redirect to single primary domain
-RewriteCond %{HTTP_HOST} woopsgram\.com$
-RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
-RewriteCond %{HTTP_HOST} whoopsgram\.com$
-RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
+# # Redirect to single primary domain
+# RewriteCond %{HTTP_HOST} woopsgram\.com$
+# RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
+# RewriteCond %{HTTP_HOST} whoopsgram\.com$
+# RewriteRule ^(.*)$ https://www.oopsgram.com/$1 [L,R=301]
 
-# Redirect to www
-RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-RewriteCond %{HTTPS}s ^on(s)|
-# RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# # Redirect to www
+# RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+# RewriteCond %{HTTPS}s ^on(s)|
+# # RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# RewriteCond %{HTTP_HOST} !^www\. [NC]
-# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+# # RewriteCond %{HTTP_HOST} !^www\. [NC]
+# # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
